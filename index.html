@@ -1,20 +1,132 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pangerso Panji</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Happy Anniversary Mbul</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/google/material-design-icons/master/png/social/sentiment_heart/materialiconsoutlined/24dp/2x/outline_sentiment_heart_black_24dp.png" type="image/png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <img src="fotoku.jpg" alt="Foto Profil" class="profile-img">
-        <h1>Pangerso Panji Birowo</h1>
-        <h1>1202223087/FRI/Sistem Informasi</h1>
-        <p><a href="https://www.instagram.com/panjibirowo" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a></p>
+<body class="bg-pink-50 text-gray-800">
+
+    <section id="home" class="relative h-screen bg-cover bg-center flex justify-center items-center text-center text-white" style="background-image: url('gambar1.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+        
+        <div class="relative z-10 p-4">
+            <h1 class="text-6xl md:text-9xl font-bold relative stroke-text animation-fade-in-up" style="font-family: 'Dancing Script', cursive;">
+                Happy Anniversary Mbul
+            </h1>
+            <p class="mt-6 text-2xl md:text-5xl relative text-pink-100 drop-shadow-lg animation-fade-in-up animation-delay-500" style="font-family: 'Great Vibes', cursive;">
+                Semoga cinta kita semakin kuat seiring berjalannya waktu.
+            </p>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-16 bg-pink-50 animation-fade-in-up">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-pink-600 mb-8">Tentang Kita</h2>
+            <p class="mt-4 text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Kita dipertemukan secara tak terduga, namun sejak saat itu segalanya terasa begitu indah. 
+                Bersama, kita telah melewati tawa, air mata, dan berbagai cerita yang membuat hubungan ini semakin kuat. 
+                Setiap hari bersamamu adalah anugerah, dan aku bersyukur bisa berjalan bersamamu sejauh ini. 
+                Semoga kisah cinta kita selalu dipenuhi kebahagiaan, kehangatan, dan cinta yang tak pernah pudar.
+            </p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="max-w-xs mx-auto flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="foto1.jpg" alt="Pertemuan Pertama" class="w-32 h-32 object-cover rounded-full shadow-md mb-6 border-4 border-pink-300">
+                    <h3 class="text-2xl font-semibold text-pink-500 mb-3">Pertemuan Pertama</h3>
+                    <p class="text-gray-600 text-base">Hari itu, tanpa sengaja kita bertemu dan saling mengenal. Siapa sangka, pertemuan sederhana itu menjadi awal dari kisah indah kita.</p>
+                </div>
+                <div class="max-w-xs mx-auto flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="foto2.jpg" alt="Momen Spesial" class="w-32 h-32 object-cover rounded-full shadow-md mb-6 border-4 border-pink-300">
+                    <h3 class="text-2xl font-semibold text-pink-500 mb-3">Momen Spesial</h3>
+                    <p class="text-gray-600 text-base">Banyak momen yang telah kita lalui bersama, dari perjalanan kecil hingga perayaan besar. Setiap kenangan selalu terasa spesial di hati.</p>
+                </div>
+                <div class="max-w-xs mx-auto flex flex-col items-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img src="foto3.jpg" alt="Harapan Bersama" class="w-32 h-32 object-cover rounded-full shadow-md mb-6 border-4 border-pink-300">
+                    <h3 class="text-2xl font-semibold text-pink-500 mb-3">Harapan Bersama</h3>
+                    <p class="text-gray-600 text-base">Semoga cinta ini terus tumbuh, saling menguatkan, dan membawa kebahagiaan untuk kita berdua selamanya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pesan" class="py-16 bg-pink-100 animation-fade-in-up">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-pink-600 mb-8">Pesan Romantis</h2>
+            <p id="kata" class="mt-6 text-2xl text-gray-700 italic max-w-2xl mx-auto transition-opacity duration-500 ease-in-out opacity-0">
+                Klik tombol untuk melihat kata-kata romantis...
+            </p>
+            
+            <div class="mt-8">
+                <button id="randomButton" class="bg-pink-500 text-white px-8 py-4 rounded-full shadow-lg hover:bg-pink-600 transform hover:scale-105 transition-all duration-300 text-lg">
+                    Tampilkan Pesan Cinta
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="kenangan" class="py-16 bg-pink-50 animation-fade-in-up">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-pink-600 mb-8">Kenangan Kami</h2>
+            <p class="mt-4 text-xl text-gray-700 mb-12">Beberapa kenangan indah yang kami bagikan bersama.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="relative group cursor-pointer photo-gallery-item" data-full-img="full_foto_1.jpg" data-caption="Perjalanan pertama kita bersama.">
+                    <img src="thumbnail_foto_1.jpg" alt="Kenangan 1" class="w-full h-48 object-cover rounded-lg shadow-lg transform transition-transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                        <p class="text-white text-lg font-semibold">Senyum di Kota</p>
+                    </div>
+                </div>
+                <div class="relative group cursor-pointer photo-gallery-item" data-full-img="full_foto_2.jpg" data-caption="Malam spesial kita berdua.">
+                    <img src="thumbnail_foto_2.jpg" alt="Kenangan 2" class="w-full h-48 object-cover rounded-lg shadow-lg transform transition-transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                        <p class="text-white text-lg font-semibold">Makan Malam Romantis</p>
+                    </div>
+                </div>
+                <div class="relative group cursor-pointer photo-gallery-item" data-full-img="full_foto_3.jpg" data-caption="Petualangan di pegunungan.">
+                    <img src="thumbnail_foto_3.jpg" alt="Kenangan 3" class="w-full h-48 object-cover rounded-lg shadow-lg transform transition-transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                        <p class="text-white text-lg font-semibold">Puncak Cinta</p>
+                    </div>
+                </div>
+                <div class="relative group cursor-pointer photo-gallery-item" data-full-img="full_foto_4.jpg" data-caption="Kebersamaan di pantai.">
+                    <img src="thumbnail_foto_4.jpg" alt="Kenangan 4" class="w-full h-48 object-cover rounded-lg shadow-lg transform transition-transform group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                        <p class="text-white text-lg font-semibold">Senja Bersama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 hidden p-4">
+        <div class="relative bg-white p-4 md:p-6 rounded-lg shadow-2xl max-w-4xl max-h-full overflow-hidden flex flex-col items-center">
+            <button id="closeLightbox" class="absolute top-2 right-2 text-gray-800 hover:text-gray-600 text-4xl font-bold leading-none">&times;</button>
+            <img id="lightboxImage" src="" alt="Full Image" class="max-w-full max-h-[70vh] object-contain mx-auto rounded-md shadow-md">
+            <p id="lightboxCaption" class="text-center mt-4 text-gray-700 text-lg"></p>
+            <div class="flex justify-between w-full mt-6">
+                <button id="prevImage" class="bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition-colors duration-200 flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    Sebelumnya
+                </button>
+                <button id="nextImage" class="bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition-colors duration-200 flex items-center">
+                    Selanjutnya
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </div>
     </div>
+
+    <footer class="bg-pink-300 py-6 text-center text-pink-800 text-lg">
+        <p>&copy; 2025 Happy Anniversary Mbul. Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
